@@ -28,5 +28,5 @@ Features
 Known Issues
 -------------
 
-Pexpect is Linux-only apparently... will switch to telnetlib soon
-Script will crash if the dedicated server isn't running. Easy fix.
+* Pexpect is Linux-only apparently... will switch to telnetlib soon
+* Script will crash if the dedicated server isn't running. Easy fix.
