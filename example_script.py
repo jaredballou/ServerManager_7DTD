@@ -29,7 +29,7 @@ def player_died(data):
 s.on("player_connected", player_joined)
 s.on("player_disconnected", player_left)
 s.on("clock", clock_tick)
-s.on("player_died", player_died)
+s.on("player_death", player_died)
 
 s.start()
 

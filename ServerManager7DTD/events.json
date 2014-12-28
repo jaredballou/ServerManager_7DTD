@@ -21,7 +21,7 @@
         }
     },
     {
-        "name": "player_died",
+        "name": "player_death",
         "trigger": "GMSG: Player \\S+ died",
         "data": {
             "name": "GMSG: Player (\\S+) died"
