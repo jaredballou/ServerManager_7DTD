@@ -1,4 +1,4 @@
-import pexpect
+import telnetlib
 import sys
 import time
 
@@ -10,19 +10,20 @@ class Telnet7DTD():
         self._connection = None
 
     def connect(self):
-        c = pexpect.spawn("telnet " + self._host + " " + str(self._port))
-        c.expect("password:")
-        c.sendline(self._password + "\n")
+        c = telnetlib.Telnet(self._host, self._port)
+        c.read_until(b"password:")
+        c.write(self._password.encode('ascii') + b"\n")
         self._connection = c
 
     def disconnect(self):
-        self._connection.sendline("\n")
-        self._connection.sendline("exit\n")
+        self._connection.write(b"\n")
+        self._connection.write(b"exit\n")
         time.sleep(2)
         self._connection.close()
         self._connection = None
 
     def command(self, com):
-        self._connection.sendline(com + "\n")
+        self._connection.write(com.encode('ascii') + b"\n")
+
 
 
