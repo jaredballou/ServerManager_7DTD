@@ -1,0 +1,5 @@
+log_file = /path/to/your/dedicated_servers/output_log.txt
+server_telnet_host = localhost
+server_telnet_port = 8081
+server_telnet_password = CHANGEME
+

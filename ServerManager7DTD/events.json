@@ -1,0 +1,30 @@
+[
+    {
+        "name": "player_connected",
+        "trigger": "Player connected",
+        "data": {
+            "clientid": "clientid=(\\d+),",
+            "entityid": "entityid=(\\d+),",
+            "name": "name=(\\S+),",
+            "steamid": "steamid=(\\d+),",
+            "ip": "ip=(\\d+\\.\\d+\\.\\d+\\.\\d+)"
+        }
+    },
+    {
+        "name": "player_disconnected",
+        "trigger": "Player disconnected:",
+        "data": {
+            "clientid": "ClientID=(\\d+)",
+            "entityid": "EntityID=(\\d+)",
+            "steamid": "PlayerID=\\'(\\d+)\\'",
+            "name": "PlayerName=\\'(\\S+)\\'"
+        }
+    },
+    {
+        "name": "player_died",
+        "trigger": "GMSG: Player \\S+ died",
+        "data": {
+            "name": "GMSG: Player (\\S+) died"
+        }
+    }
+]
