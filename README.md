@@ -6,9 +6,9 @@ An event-based server management library for 7 Days to Die dedicated servers
 Prerequisites
 --------------
 
-Python 3
-7 Days to Die Dedicated Server up & running
-Alloc's Server Fixes (https://7dtd.illy.bz/wiki/Server%20fixes) highly recommended
+* Python 3
+* 7 Days to Die Dedicated Server up & running
+* Alloc's Server Fixes (https://7dtd.illy.bz/wiki/Server%20fixes) highly recommended
 
 Usage
 ---------
