@@ -6,9 +6,7 @@ An event-based server management library for 7 Days to Die dedicated servers
 Prerequisites
 --------------
 
-* Linux host (for now)
 * Python 3
-* pexpect module
 * 7 Days to Die Dedicated Server up & running
 * Alloc's Server Fixes (https://7dtd.illy.bz/wiki/Server%20fixes) highly recommended
 
@@ -28,5 +26,4 @@ Features
 Known Issues
 -------------
 
-* Pexpect is Linux-only apparently... will switch to telnetlib soon
 * Script will crash if the dedicated server isn't running. Easy fix.
