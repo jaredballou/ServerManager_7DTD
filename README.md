@@ -6,6 +6,7 @@ An event-based server management library for 7 Days to Die dedicated servers
 Prerequisites
 --------------
 
+* Linux host (for now)
 * Python 3
 * pexpect module
 * 7 Days to Die Dedicated Server up & running
