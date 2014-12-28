@@ -3,6 +3,12 @@ ServerManager_7DTD
 
 An event-based server management library for 7 Days to Die dedicated servers
 
+Prerequisites
+--------------
+
+Python 3
+7 Days to Die Dedicated Server up & running
+Alloc's Server Fixes (https://7dtd.illy.bz/wiki/Server%20fixes) highly recommended
 
 Usage
 ---------
@@ -16,3 +22,8 @@ Features
 * Raise & handle events based on what happens in server log
 * If you know regex, it's easy to define your own log-based events (the event definitions are located in ServerManager_7DTD/events.json)
 * Support for non-log events (for example, clock event)
+
+Known Issues
+-------------
+
+Script will crash if the dedicated server isn't running. Easy fix.
