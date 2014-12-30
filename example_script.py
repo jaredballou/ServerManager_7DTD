@@ -26,10 +26,22 @@ def player_died(data):
     t.command("say " + data['name'] + " died!")
     t.disconnect()
 
+def player_command(data):
+    com = data['command']
+    p = data['name']
+    t.connect()
+    
+    if com == "" or com == "?":
+       t.command("pm " + p + " available commands:")
+       t.command("pm " + p + "  /killme: kills you")
+    elif com == "killme":
+       t.command("kill " + p)
+
 s.on("player_connected", player_joined)
 s.on("player_disconnected", player_left)
 s.on("clock", clock_tick)
 s.on("player_death", player_died)
+s.on("player_command", player_command)
 
 s.start()
 

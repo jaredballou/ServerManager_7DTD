@@ -26,5 +26,13 @@
         "data": {
             "name": "GMSG: Player (\\S+) died"
         }
+    },
+    {
+        "name": "player_command",
+        "trigger": "INF GMSG: \\S+: /.*",
+        "data": {
+            "name": "INF GMSG: (\\S+): /.*",
+            "command": "INF GMSG: \\S+: /(.*)"
+        }
     }
 ]
