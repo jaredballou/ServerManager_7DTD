@@ -5,7 +5,7 @@
         "data": {
             "clientid": "clientid=(\\d+),",
             "entityid": "entityid=(\\d+),",
-            "name": "name=(\\S+),",
+            "name": "name=(.*?),",
             "steamid": "steamid=(\\d+),",
             "ip": "ip=(\\d+\\.\\d+\\.\\d+\\.\\d+)"
         }
